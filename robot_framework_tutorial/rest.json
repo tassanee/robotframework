@@ -1,0 +1,179 @@
+[
+    {
+        "request": {
+            "allowRedirects": true,
+            "body": {
+                "company": {
+                    "code": 2020,
+                    "name": "KPN"
+                },
+                "id": 11,
+                "name": "Kachen",
+                "username": "Learning3Thai"
+            },
+            "cert": null,
+            "headers": {
+                "Accept": "application/json, */*",
+                "Content-Type": "application/json",
+                "User-Agent": "RESTinstance/1.0.2"
+            },
+            "method": "POST",
+            "netloc": "jsonplaceholder.typicode.com",
+            "path": "/users",
+            "proxies": {},
+            "query": {},
+            "scheme": "https",
+            "sslVerify": true,
+            "timeout": [
+                null,
+                null
+            ],
+            "timestamp": {
+                "local": "2020-06-07T12:42:41.315623+07:00",
+                "utc": "2020-06-07T05:42:41.315623+00:00"
+            },
+            "url": "https://jsonplaceholder.typicode.com/users"
+        },
+        "response": {
+            "body": {
+                "company": {
+                    "code": 2020,
+                    "name": "KPN"
+                },
+                "id": 11,
+                "name": "Kachen",
+                "username": "Learning3Thai"
+            },
+            "headers": {
+                "Access-Control-Allow-Credentials": "true",
+                "Access-Control-Expose-Headers": "Location",
+                "CF-Cache-Status": "DYNAMIC",
+                "CF-RAY": "59f80d0f6c75ca3a-BKK",
+                "Cache-Control": "no-cache",
+                "Connection": "keep-alive",
+                "Content-Length": "121",
+                "Content-Type": "application/json; charset=utf-8",
+                "Date": "Sun, 07 Jun 2020 05:42:40 GMT",
+                "Etag": "W/\"79-5lFhKYXvpiqO9hArhI5HO5nobxc\"",
+                "Expect-CT": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+                "Expires": "-1",
+                "Location": "http://jsonplaceholder.typicode.com/users/11",
+                "Pragma": "no-cache",
+                "Server": "cloudflare",
+                "Set-Cookie": "__cfduid=d594e478fe8c3e595ed9746c2e348e6dc1591508559; expires=Tue, 07-Jul-20 05:42:39 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax",
+                "Vary": "Origin, X-HTTP-Method-Override, Accept-Encoding",
+                "Via": "1.1 vegur",
+                "X-Content-Type-Options": "nosniff",
+                "X-Powered-By": "Express",
+                "cf-request-id": "032ee67d9e0000ca3a3ebb5200000001"
+            },
+            "seconds": 0.704602,
+            "status": 201
+        },
+        "schema": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "default": true,
+            "description": "Rest Post: POST json body and write to file",
+            "examples": [],
+            "properties": {
+                "request": {
+                    "properties": {
+                        "body": {
+                            "properties": {
+                                "company": {
+                                    "properties": {
+                                        "code": {
+                                            "type": "integer"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "code",
+                                        "name"
+                                    ],
+                                    "type": "object"
+                                },
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "username": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "company",
+                                "id",
+                                "name",
+                                "username"
+                            ],
+                            "type": "object"
+                        },
+                        "query": {
+                            "type": "object"
+                        }
+                    },
+                    "type": "object"
+                },
+                "response": {
+                    "properties": {
+                        "body": {
+                            "properties": {
+                                "company": {
+                                    "properties": {
+                                        "code": {
+                                            "default": 2020,
+                                            "type": "integer"
+                                        },
+                                        "name": {
+                                            "default": "KPN",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "code",
+                                        "name"
+                                    ],
+                                    "type": "object"
+                                },
+                                "id": {
+                                    "default": 11,
+                                    "type": "integer"
+                                },
+                                "name": {
+                                    "default": "Kachen",
+                                    "type": "string"
+                                },
+                                "username": {
+                                    "default": "Learning3Thai",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "company",
+                                "id",
+                                "name",
+                                "username"
+                            ],
+                            "type": "object"
+                        },
+                        "status": {
+                            "enum": [
+                                201
+                            ],
+                            "type": "integer"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "title": "POST https://jsonplaceholder.typicode.com/users",
+            "type": "object"
+        },
+        "spec": {}
+    }
+]
